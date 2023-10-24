@@ -1,27 +1,24 @@
-package org.example.stream.service;
+package org.example.stream.util;
 
 import org.example.stream.model.Gender;
 import org.example.stream.model.Operator;
 import org.example.stream.model.Person;
 import org.example.stream.model.Phone;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PersonServiceTest {
+public class DataCreator {
 
-    private List<Person> persons;
-
-    @BeforeEach
-    public void init() {
+    public static List<Person> initPersonData() {
         Person bob = Person.builder()
                 .name("Bob")
                 .age(10)
                 .weight(26.4)
                 .gender(Gender.MALE)
-                .phones(List.of(new Phone(Operator.MTS, "+375297554466")))
+                .phones(List.of(new Phone(Operator.Life, "+375297554466")))
                 .build();
         Person tom = Person.builder()
                 .name("Tom")
@@ -35,11 +32,12 @@ public class PersonServiceTest {
                 .age(43)
                 .weight(97.9)
                 .gender(Gender.FEMALE)
-                .phones(List.of(new Phone(Operator.A1, "+375295224466")))
+                .phones(List.of(new Phone(Operator.A1, "+375295224466"), new Phone(Operator.A1, "+375299924466"),
+                        new Phone(Operator.MTS, "+375295224499"), new Phone(Operator.MTS, "+375295111466")))
                 .build();
         Person julia = Person.builder()
                 .name("Julia")
-                .age(18)
+                .age(15)
                 .weight(42.5)
                 .gender(Gender.FEMALE)
                 .phones(List.of(new Phone(Operator.A1, "+375445254466")))
@@ -60,7 +58,7 @@ public class PersonServiceTest {
                 .build();
         Person hanna = Person.builder()
                 .name("Hanna")
-                .age(38)
+                .age(44)
                 .weight(64.7)
                 .gender(Gender.FEMALE)
                 .phones(List.of(new Phone(Operator.MTS, "+375335599466")))
@@ -100,6 +98,17 @@ public class PersonServiceTest {
                 .gender(Gender.MALE)
                 .phones(List.of(new Phone(Operator.MTS, "+375335577466")))
                 .build();
-        persons = new ArrayList<>(List.of(new ))
+        return new ArrayList<>(List.of(charlie, jack, marry, lily, bill, hanna, henry, donald, julia, elis, tom, bob));
+    }
+
+    public static List<LocalDate> initDates() {
+        return new ArrayList<>(List.of(
+                                        LocalDate.of(2020, 01, 10),
+                                        LocalDate.of(2010, 03, 10),
+                                        LocalDate.of(2004, 06, 29),
+                                        LocalDate.of(2015, 07, 23),
+                                        LocalDate.of(2022, 10, 11),
+                                        LocalDate.of(2023, 05, 22)
+                                ));
     }
 }

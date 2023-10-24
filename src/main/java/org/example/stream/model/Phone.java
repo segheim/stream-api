@@ -1,11 +1,13 @@
 package org.example.stream.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class Phone {
 
-    private final Operator operator;
-    private final String number;
+    private Operator operator;
+    private String number;
 
 }
