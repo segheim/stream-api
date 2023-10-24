@@ -1,5 +1,6 @@
 package org.example.stream.service;
 
+import org.example.stream.collector.CustomHashCollector;
 import org.example.stream.model.Gender;
 import org.example.stream.model.Operator;
 import org.example.stream.model.Person;
@@ -10,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class PersonService {
 
@@ -115,5 +115,9 @@ public class PersonService {
         result.forEach((gender, personNames) -> System.out.println(gender + " - " + personNames));
     }
 
-
+    public void customCollector(List<Person> persons) {
+        System.out.println("Использование собственного коллектора(пребразует объекты в хэш-коды)");
+        List<Integer> result = persons.stream().collect(new CustomHashCollector<>());
+        result.forEach(System.out::println);
+    }
 }

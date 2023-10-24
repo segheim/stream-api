@@ -25,6 +25,7 @@ public class Main {
         service.getYoungest(persons);
         service.groupingByOperator(persons);
         service.groupingByGenderWithCount(persons);
+        service.customCollector(persons);
 
         DifferentTaskService differentTaskService = new DifferentTaskService();
         differentTaskService.getFrequencyDictionary();

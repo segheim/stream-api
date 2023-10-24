@@ -6,7 +6,6 @@ import org.example.stream.model.Person;
 import org.example.stream.model.Phone;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -103,12 +102,12 @@ public class DataCreator {
 
     public static List<LocalDate> initDates() {
         return new ArrayList<>(List.of(
-                                        LocalDate.of(2020, 01, 10),
-                                        LocalDate.of(2010, 03, 10),
-                                        LocalDate.of(2004, 06, 29),
-                                        LocalDate.of(2015, 07, 23),
-                                        LocalDate.of(2022, 10, 11),
-                                        LocalDate.of(2023, 05, 22)
-                                ));
+                LocalDate.of(2020, 01, 10),
+                LocalDate.of(2010, 03, 10),
+                LocalDate.of(2004, 06, 29),
+                LocalDate.of(2015, 07, 23),
+                LocalDate.of(2022, 10, 11),
+                LocalDate.of(2023, 05, 22)
+        ));
     }
 }
