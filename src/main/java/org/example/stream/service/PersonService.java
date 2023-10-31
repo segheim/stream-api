@@ -94,10 +94,7 @@ public class PersonService {
         System.out.println("Получние список Person и найдите самого младшего по возрасту");
         Optional<Person> minAge = persons.stream()
                 .min(Comparator.comparing(Person::getAge));
-        if (minAge.isPresent()) {
-            System.out.println(minAge.get());
-        }
-        System.out.println("Не удалось получить минимальнй возраст");
+        minAge.ifPresentOrElse(value -> minAge.get(), () -> System.out.println("Не удалось получить минимальнй возраст"));
     }
 
     public void groupingByOperator(List<Person> persons) {
@@ -116,7 +113,7 @@ public class PersonService {
     }
 
     public void customCollector(List<Person> persons) {
-        System.out.println("Использование собственного коллектора(пребразует объекты в хэш-коды)");
+        System.out.println("использование собственного коллектора(пребразует объекты в хэш-коды)");
         List<Integer> result = persons.stream().collect(new CustomHashCollector<>());
         result.forEach(System.out::println);
     }

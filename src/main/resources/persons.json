@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Bob",
+    "age": 10,
+    "weight": 26.4,
+    "gender": "MALE",
+    "phones": [
+      {
+        "operator": "Life",
+        "number": "+375297554466"
+      }
+    ]
+  },
+  {
+    "name": "Tom",
+    "age": 22,
+    "weight": 77.9,
+    "gender": "MALE",
+    "phones": [
+      {
+        "operator": "MTS",
+        "number": "+375335554466"
+      },
+      {
+        "operator": "A1",
+        "number": "+375335554469"
+      }
+    ]
+  },
+  {
+    "name": "Elis",
+    "age": 43,
+    "weight": 97.9,
+    "gender": "FEMALE",
+    "phones": [
+      {
+        "operator": "Life",
+        "number": "+375297554466"
+      },
+      {
+        "operator": "MTS",
+        "number": "+375295224499"
+      },
+      {
+        "operator": "A1",
+        "number": "+375295224466"
+      },
+      {
+        "operator": "A1",
+        "number": "+375295200466"
+      }
+    ]
+  },
+  {
+    "name": "Julia",
+    "age": 15,
+    "weight": 43.4,
+    "gender": "FEMALE",
+    "phones": [
+      {
+        "operator": "A1",
+        "number": "+375297554111"
+      }
+    ]
+  },
+  {
+    "name": "Donald",
+    "age": 32,
+    "weight": 78.6,
+    "gender": "MALE",
+    "phones": [
+      {
+        "operator": "Life",
+        "number": "+375297554466"
+      },
+      {
+        "operator": "A1",
+        "number": "+375291154466"
+      }
+    ]
+  },
+  {
+    "name": "Henry",
+    "age": 56,
+    "weight": 83.2,
+    "gender": "MALE",
+    "phones": [
+      {
+        "operator": "MTS",
+        "number": "+375297554996"
+      }
+    ]
+  },
+  {
+    "name": "Hanna",
+    "age": 44,
+    "weight": 64.7,
+    "gender": "FEMALE",
+    "phones": [
+      {
+        "operator": "A1",
+        "number": "+375297555566"
+      }
+    ]
+  },
+  {
+    "name": "Bill",
+    "age": 44,
+    "weight": 108.1,
+    "gender": "MALE",
+    "phones": [
+      {
+        "operator": "A1",
+        "number": "+375293355566"
+      }
+    ]
+  },
+  {
+    "name": "Lily",
+    "age": 26,
+    "weight": 53.4,
+    "gender": "FEMALE",
+    "phones": [
+      {
+        "operator": "A1",
+        "number": "+375297555986"
+      }
+    ]
+  },
+  {
+    "name": "Marry",
+    "age": 68,
+    "weight": 68.7,
+    "gender": "FEMALE",
+    "phones": [
+      {
+        "operator": "A1",
+        "number": "+375297555566"
+      },
+      {
+        "operator": "MTS",
+        "number": "+375297555886"
+      },
+      {
+        "operator": "A1",
+        "number": "+375297775566"
+      }
+    ]
+  },
+  {
+    "name": "Jack",
+    "age": 73,
+    "weight": 87.9,
+    "gender": "MALE",
+    "phones": [
+      {
+        "operator": "A1",
+        "number": "+3752975557777"
+      },
+      {
+        "operator": "Life",
+        "number": "+3752975513256"
+      }
+    ]
+  },
+  {
+    "name": "Charlie",
+    "age": 15,
+    "weight": 29.9,
+    "gender": "MALE",
+    "phones": [
+      {
+        "operator": "A1",
+        "number": "+3752975554869"
+      }
+    ]
+  }
+]

@@ -4,13 +4,15 @@ import org.example.stream.model.Person;
 import org.example.stream.service.DifferentTaskService;
 import org.example.stream.service.PersonService;
 import org.example.stream.util.DataCreator;
+import org.example.stream.util.ReaderFile;
 
+import java.io.File;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        List<Person> persons = DataCreator.initPersonData();
+        List<Person> persons = DataCreator.getInstance().initPersonDataFromJson();
         PersonService service = new PersonService();
 
         service.filteringByAge(30, persons);

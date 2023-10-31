@@ -9,9 +9,9 @@ public class ReaderFile {
     public static String getText(String path) {
         StringBuilder sb = new StringBuilder();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(path))) {
-            sb.append(bufferedReader.readLine());
-            while (bufferedReader.readLine() != null) {
-                sb = sb.append(bufferedReader.readLine());
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                sb = sb.append(line).append(" ");
             }
             return sb.toString();
         } catch (IOException e) {
